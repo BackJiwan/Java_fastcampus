@@ -6,8 +6,6 @@ public class ch12_BubbleSort {
     public static ArrayList<Integer> sort(ArrayList<Integer> dataList){
         for(int idx=0;idx<dataList.size()-1;idx++){
             boolean swap = false;
-
-
             for(int idx2=0;idx2<dataList.size()-1-idx;idx2++){
                 if(dataList.get(idx2)>dataList.get(idx2+1)){
                     Collections.swap(dataList,idx2,idx2+1);

@@ -5,7 +5,7 @@ import java.util.Collections;
 public class InsertionSort {
     public ArrayList<Integer> iSort(ArrayList<Integer> dataList){
         for(int stand=0;stand<dataList.size()-1;stand++){
-            for(int idx = stand+1;idx>0;idx--){
+            for(int idx = stand+1;idx>0;idx--){ // 기준점에서 앞으로 한칸씩 이동하며 자신보다 큰값을 만나면 swap 반대라면 break
                 if(dataList.get(idx)<dataList.get(idx-1)){
                     Collections.swap(dataList,idx,idx-1);
                 } else{ //기준점의 앞부분은 정렬이 되어 있는 상태이기때문에 한번 막히면 더이상 진행 필요 X

@@ -14,7 +14,8 @@ public class BubbleSort {
                     swap = true;
                 }
             }
-            if(swap ==false){
+            if(swap ==false){ //버블정렬은 맨앞에서부터 맨뒤까지 그 이후에는 맨앞에서 부터 맨뒤의 한칸앞까지
+                //이동하는 방식인데 이때 한번의 순회에서 swap이 없었다면 굳이 남은 것들을 진행할 필요없이 정렬된 데이터임을 알수있다.
                 break;
             }
         }

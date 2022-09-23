@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class BinarySearch {
+
     public boolean searchFunc(ArrayList<Integer> dataList,Integer searchItem){
         if(dataList.size() == 1 && searchItem == dataList.get(0)){
             return true;

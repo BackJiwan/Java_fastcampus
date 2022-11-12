@@ -17,7 +17,7 @@ public class DijkstraPath {
 
         for (String key : graph.keySet()) {
             distances.put(key, Integer.MAX_VALUE);
-        }
+        } //가중치는 해시맵의 형태로 이름,거리 를 가지는 distances
         distances.put(start, 0);
 
         priorityQueue.add(new Edge(distances.get(start), start));
